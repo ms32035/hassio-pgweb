@@ -10,3 +10,4 @@ CONFIG_PATH=/data/options.json
 --db $(jq --raw-output ".database" $CONFIG_PATH) \
 --ssl $(jq --raw-output ".ssl" $CONFIG_PATH) \
 --listen 8099 \
+--bind 0.0.0.0
