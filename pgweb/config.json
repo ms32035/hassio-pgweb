@@ -1,0 +1,30 @@
+{
+  "name": "pgweb",
+  "version": "0.0.1",
+  "slug": "pgweb",
+  "description": "Pgweb",
+  "arch": [
+    "armhf",
+    "armv7",
+    "aarch64",
+    "amd64",
+    "i386"
+  ],
+  "startup": "application",
+  "boot": "auto",
+  "ingress": true,
+  "options": {
+    "host": "",
+    "port": 5432,
+    "username": "",
+    "password": "",
+    "database": ""
+  },
+  "schema": {
+    "host": "str",
+    "port": "int(0,65536)?",
+    "username": "str",
+    "password": "str",
+    "database": "str"
+  }
+}
