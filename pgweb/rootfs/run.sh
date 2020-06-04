@@ -8,4 +8,5 @@ CONFIG_PATH=/data/options.json
 --user $(jq --raw-output ".username" $CONFIG_PATH) \
 --pass $(jq --raw-output ".password" $CONFIG_PATH) \
 --db $(jq --raw-output ".database" $CONFIG_PATH) \
---listen 8099
+--ssl $(jq --raw-output ".ssl" $CONFIG_PATH) \
+--listen 8099 \

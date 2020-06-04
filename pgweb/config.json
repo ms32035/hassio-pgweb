@@ -1,6 +1,6 @@
 {
   "name": "pgweb",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "slug": "pgweb",
   "description": "Pgweb",
   "arch": [
@@ -18,13 +18,15 @@
     "port": 5432,
     "username": "",
     "password": "",
-    "database": ""
+    "database": "",
+    "ssl": "require"
   },
   "schema": {
     "host": "str",
     "port": "int(0,65536)?",
     "username": "str",
     "password": "str",
-    "database": "str"
+    "database": "str",
+    "ssl": "str"
   }
 }
