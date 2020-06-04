@@ -2,7 +2,7 @@
 
 CONFIG_PATH=/data/options.json
 
-pgweb \
+/pgweb \
 --host $(jq --raw-output ".host" $CONFIG_PATH) \
 --port $(jq --raw-output ".port" $CONFIG_PATH) \
 --username $(jq --raw-output ".username" $CONFIG_PATH) \

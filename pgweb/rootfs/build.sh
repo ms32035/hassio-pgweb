@@ -18,6 +18,6 @@ esac
 wget https://github.com/sosedoff/pgweb/releases/download/${tag}/pgweb_${docker_arch}.zip \
 -O pgweb.zip && \
 unzip pgweb.zip && \
-mv pgweb_${docker_arch} pgweb && \
-chmod +x pgweb && \
+mv pgweb_${docker_arch} /pgweb && \
+chmod +x /pgweb && \
 rm pgweb.zip
