@@ -1,7 +1,7 @@
 #!/bin/bash
 
 arch=$(uname -m)
-tag="v0.11.6"
+tag="v0.11.7"
 
 case $arch in
 armv7l)
@@ -15,7 +15,7 @@ x86_64)
   ;;
 esac
 
-wget https://github.com/sosedoff/pgweb/releases/download/${tag}/pgweb_${docker_arch}.zip \
+wget -q https://github.com/sosedoff/pgweb/releases/download/${tag}/pgweb_${docker_arch}.zip \
 -O pgweb.zip && \
 unzip pgweb.zip && \
 mv pgweb_${docker_arch} /pgweb && \
