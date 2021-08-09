@@ -1,11 +1,11 @@
 #!/bin/bash
 
 arch=$(uname -m)
-tag="v0.11.7"
+tag="v0.11.8"
 
 case $arch in
 armv7l)
-  docker_arch=linux_arm_v5
+  docker_arch=linux_arm64_v7
   ;;
 x86_64)
   docker_arch=linux_amd64
