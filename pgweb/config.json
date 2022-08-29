@@ -1,6 +1,6 @@
 {
   "name": "pgweb",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "slug": "pgweb",
   "description": "Pgweb",
   "arch": [
@@ -12,6 +12,7 @@
   ],
   "startup": "application",
   "boot": "auto",
+  "init": false,
   "ingress": true,
   "options": {
     "host": "",
