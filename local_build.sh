@@ -6,6 +6,9 @@ case $arch in
 armv7l)
   docker_arch=armv7
   ;;
+aarch64)
+  docker_arch=aarch64
+  ;;
 x86_64)
   docker_arch=amd64
   ;;
