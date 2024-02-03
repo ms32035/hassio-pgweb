@@ -1,7 +1,7 @@
 #!/bin/bash
 
 arch=$(uname -m)
-tag="v0.14.1"
+tag="v0.14.3"
 
 case $arch in
 armv7l)
